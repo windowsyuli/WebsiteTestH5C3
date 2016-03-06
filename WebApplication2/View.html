@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<link href="Style/StyleSheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" data-main="ViewModel/Index.js" src="ViewModel/Lib/require.js"></script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WebSchool</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="logo" data-bind="text:webschool"></div>
+            <ul>
+                <li><a class="scroll" data-bind="click:OnScroll.bind($data,'#contact')" href="#contact">Contact</a></li>
+                <li><a class="scroll" data-bind="click:OnScroll.bind($data,'#type')" href=" #type">TypeScript</a></li>
+                <li><a class="scroll" data-bind="click:OnScroll.bind($data,'#css')" href=" #css">Logo</a></li>
+                <li><a class="scroll" data-bind="click:OnScroll.bind($data,'#home')" href=" #home">Home</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="home"></div>
+
+    <div id="css">
+        <div class="content">
+            <div class="circle">
+                <div class="one" data-bind="click:OnClick.bind($data,1500)"></div>
+                <div class="two"></div>
+                <div class="three "></div>
+                <div class="four"></div>
+            </div>
+            <div class="titlediv" data-bind="text:webschool"></div>
+        </div>
+    </div>
+
+    <div id="type">
+        <div class="title" data-bind="text:typescript"></div>
+        <div class="content">
+            <div class="arti">
+                <div class="content1" data-bind="text:content1"></div>
+                <div class="content2" data-bind="text:content2"></div>
+            </div>
+            <video id="vid" poster="Img/IntroducingTS.jpg" controls="controls">
+                <source src="http://media.ch9.ms/ch9/c3e5/e5e02f2e-5962-48db-9ddd-85e27a4fc3e5/IntroducingTSAndersH_mid.mp4" type="video/mp4">
+                <source src="http://media.ch9.ms/ch9/c3e5/e5e02f2e-5962-48db-9ddd-85e27a4fc3e5/IntroducingTSAndersH.webm" type="video/webm">
+            </video>
+        </div>
+    </div>
+
+    <div id="contact">
+
+        <div class="titlediv" data-bind="text:contact">Contact</div>
+
+        <div class="group1">
+            <div class="lineone"><div class="div1" data-bind="text:name"></div></div>
+            <div class="lineone"><div class="div1" data-bind="text:email"></div></div>
+            <div class="linetwo"><div class="div1" data-bind="text:interest"></div></div>
+            <div class="linethree"><div class="div1" data-bind="text:suggestion"></div></div>
+            <div class="button" data-bind="text:submit,click:OnGetInfo"></div>
+        </div>
+
+        <div class="group2">
+            <div class="lineone"><input type="text" class="div2" data-bind="value:Name" placeholder="Michael" /></div>
+            <div class="lineone"><input type="text" class="div2" data-bind="value:Email" placeholder="Michael@live.com" /></div>
+            <div class="linetwo"><select class="div2" data-bind="options:Interests, selectedOptions: Chosen" multiple="multiple"></select></div>
+            <div class="linethree"><textarea class="div2" data-bind="value:Suggestion"></textarea></div>
+        </div>
+
+        <textarea class="area" data-bind="value:Console"></textarea>
+
+    </div>
+</body>
+</html>

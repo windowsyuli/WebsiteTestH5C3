@@ -1,0 +1,377 @@
+﻿body {
+  margin: 0;
+  margin-top: -1em;
+  font-family: 'Segoe UI';
+}
+body .title {
+  font-size: 3em;
+  color: #000000;
+  font-weight: 300;
+  text-align: center;
+}
+body #home {
+  width: 100%;
+  min-height: 50em;
+  background-size: cover;
+  background-image: url('../Img/I1.jpg');
+}
+body #header {
+  width: 100%;
+  min-height: 5em;
+  background: rgba(0, 0, 0, 0.24);
+  margin: 0;
+  position: fixed;
+  z-index: 9;
+}
+body #header .container {
+  width: 70%;
+  min-height: 5em;
+  left: 15%;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+body #header .container:hover {
+  background-color: rgba(205, 245, 198, 0.42);
+  left: 0;
+  width: 100%;
+}
+body #header .container .logo {
+  float: left;
+  font-size: 3em;
+  color: #f0f8ff;
+  font-weight: 300;
+  margin-left: 1em;
+}
+body #header .container ul {
+  list-style: none;
+  list-style-position: outside;
+  text-transform: uppercase;
+}
+body #header .container ul li {
+  float: right;
+  padding-bottom: 0;
+  color: #f0f8ff;
+  font-weight: 300;
+  font-size: 1.5em;
+  width: auto;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 1em;
+}
+body #header .container ul li a {
+  text-decoration: none;
+  color: #f0f8ff;
+}
+body #header .container ul li a:hover {
+  color: ActiveCaption;
+}
+body #css {
+  width: 100%;
+  background-color: #ffffff;
+  height: 25em;
+  text-align: center;
+}
+body #css .content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  height: 25em;
+  width: 70em;
+}
+body #css .content .circle {
+  width: 25em;
+  position: relative;
+  height: 25em;
+  float: left;
+  text-align: center;
+}
+body #css .content .circle .default {
+  width: 10em;
+  height: 10em;
+  margin-left: 0.8em;
+  margin-bottom: 0.8em;
+  transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -o-transition: width 2s, height 2s, -o-transform 2s;
+  float: left;
+}
+body #css .content .circle .default:hover {
+  width: 10.5em;
+  height: 10.5em;
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+body #css .content .circle .one {
+  margin-left: 0.8em;
+  margin-bottom: 0.8em;
+  width: 10em;
+  height: 10em;
+  float: left;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  background-color: #b4b4b4;
+}
+body #css .content .circle .one:hover {
+  width: 9.5em;
+  height: 9.5em;
+  float: left;
+  background-color: #ffffff;
+  background-image: url('../Img/Play.png');
+  background-size: cover;
+  cursor: pointer;
+  transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -moz-border-radius: 5em;
+  -webkit-border-radius: 5em;
+  border-radius: 5em;
+}
+body #css .content .circle .two {
+  width: 10em;
+  height: 10em;
+  margin-left: 0.8em;
+  margin-bottom: 0.8em;
+  transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -o-transition: width 2s, height 2s, -o-transform 2s;
+  float: left;
+  background-color: #ffd800;
+}
+body #css .content .circle .two:hover {
+  width: 10.5em;
+  height: 10.5em;
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+body #css .content .circle .three {
+  width: 10em;
+  height: 10em;
+  margin-left: 0.8em;
+  margin-bottom: 0.8em;
+  transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -o-transition: width 2s, height 2s, -o-transform 2s;
+  float: left;
+  background-color: #0094ff;
+}
+body #css .content .circle .three:hover {
+  width: 10.5em;
+  height: 10.5em;
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+body #css .content .circle .four {
+  width: 10em;
+  height: 10em;
+  margin-left: 0.8em;
+  margin-bottom: 0.8em;
+  transition: width 2s, height 2s;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -o-transition: width 2s, height 2s, -o-transform 2s;
+  float: left;
+  background-color: #00ff90;
+}
+body #css .content .circle .four:hover {
+  width: 10.5em;
+  height: 10.5em;
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+body #css .content .titlediv {
+  font-size: 8em;
+  color: #000000;
+  font-weight: 300;
+  position: relative;
+  float: left;
+  margin-top: 0.5em;
+}
+body #type {
+  width: 100%;
+  background-color: #f0f8ff;
+  height: 35em;
+  position: static;
+  text-align: center;
+}
+body #type .content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+body #type .content .arti {
+  width: 35%;
+  left: 10%;
+  font-size: 1.2em;
+  position: relative;
+  float: left;
+}
+body #type .content .arti .content1 {
+  font-weight: 500;
+}
+body #type .content .arti .content2 {
+  margin-top: 2em;
+  font-weight: 300;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 2em;
+  -webkit-column-gap: 2em;
+  column-gap: 2em;
+}
+body #type .content video {
+  margin-left: 3em;
+  width: 35%;
+  height: auto;
+  display: none;
+}
+body #contact {
+  width: 100%;
+  background-color: black;
+  height: 50em;
+  text-align: center;
+}
+body #contact .titlediv {
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: 300;
+}
+body #contact .group1 {
+  width: 25%;
+  font-weight: 300;
+  float: left;
+}
+body #contact .group1 .lineone {
+  height: 2.5em;
+  margin-top: 4em;
+}
+body #contact .group1 .lineone .div1 {
+  margin-left: 20%;
+  width: 80%;
+  color: #ffffff;
+  float: left;
+  height: 1.25em;
+  font-size: 2em;
+}
+body #contact .group1 .linetwo {
+  height: 2.5em;
+  margin-top: 4em;
+}
+body #contact .group1 .linetwo .div1 {
+  margin-left: 20%;
+  width: 80%;
+  color: #ffffff;
+  float: left;
+  height: 1.25em;
+  font-size: 2em;
+}
+body #contact .group1 .linethree {
+  height: 2.5em;
+  margin-top: 4em;
+}
+body #contact .group1 .linethree .div1 {
+  margin-left: 20%;
+  width: 80%;
+  color: #ffffff;
+  float: left;
+  height: 1.25em;
+  font-size: 2em;
+}
+body #contact .group1 .linethree .div1 {
+  margin-top: 3em;
+}
+body #contact .group1 .button {
+  margin-top: 4em;
+  margin-left: 30%;
+  width: 60%;
+  height: 1.66666667em;
+  color: #ffffff;
+  float: left;
+  font-size: 2em;
+  border: 0.05em solid #ffffff;
+  cursor: pointer;
+}
+body #contact .group2 {
+  width: 25%;
+  font-weight: 300;
+  float: left;
+}
+body #contact .group2 .lineone {
+  height: 2.5em;
+  margin-top: 4em;
+}
+body #contact .group2 .lineone .div2 {
+  width: 100%;
+  margin-left: 5%;
+  color: #ffffff;
+  float: left;
+  background-color: #000000;
+  height: 2.5em;
+  font-family: 'Microsoft YaHei UI';
+  font-size: 1em;
+}
+body #contact .group2 .linetwo {
+  height: 2.5em;
+  margin-top: 4em;
+}
+body #contact .group2 .linetwo .div2 {
+  width: 100%;
+  margin-left: 5%;
+  color: #ffffff;
+  float: left;
+  background-color: #000000;
+  height: 2.5em;
+  font-family: 'Microsoft YaHei UI';
+  font-size: 1em;
+}
+body #contact .group2 .linetwo .div2 {
+  height: 7em;
+  font-size: 1.5em;
+}
+body #contact .group2 .linethree {
+  height: 2.5em;
+  margin-top: 4em;
+}
+body #contact .group2 .linethree .div2 {
+  width: 100%;
+  margin-left: 5%;
+  color: #ffffff;
+  float: left;
+  background-color: #000000;
+  height: 2.5em;
+  font-family: 'Microsoft YaHei UI';
+  font-size: 1em;
+}
+body #contact .group2 .linethree .div2 {
+  height: 8em;
+  margin-top: 2em;
+}
+body #contact .area {
+  width: 38%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 4em;
+  height: 40em;
+}
+/*# sourceMappingURL=StyleSheet.css.map */

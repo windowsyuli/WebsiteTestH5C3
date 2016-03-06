@@ -1,0 +1,351 @@
+﻿@import "constant";
+
+body {
+    margin: 0;
+    margin-top: -1em;
+    font-family: 'Segoe UI';
+
+    .title {
+        font-size: 3em;
+        color: @color10;
+        font-weight: @weight;
+        text-align: center;
+    }
+
+    #home {
+        width: 100%;
+        min-height: @minheight1;
+        background-size: cover;
+        background-image: @img1;
+    }
+
+    #header {
+        width: 100%;
+        min-height: @minheight2;
+        background: @color5;
+        margin: 0;
+        position: fixed;
+        z-index: 9;
+
+        .container {
+            @crl: all;
+            @time: 1s;
+            @style: ease;
+            @width: 70%;
+            width: @width;
+            min-height: @minheight2;
+            left: (100%-@width)/2;
+            position: relative;
+            -webkit-transition: @crl @time @style;
+            -moz-transition: @crl @time @style;
+            -o-transition: @crl @time @style;
+            transition: @crl @time @style;
+
+            &:hover {
+                background-color: @color9;
+                left: 0;
+                width: 100%;
+            }
+
+            .logo {
+                float: left;
+                font-size: 3em;
+                color: @color7;
+                font-weight: @weight;
+                margin-left: 1em;
+            }
+
+            ul {
+                list-style: none;
+                list-style-position: outside;
+                text-transform: uppercase;
+
+                li {
+                    @length: 0.5em;
+                    float: right;
+                    padding-bottom: 0;
+                    color: @color7;
+                    font-weight: @weight;
+                    font-size: 1.5em;
+                    width: auto;
+                    margin-left: @length;
+                    margin-right: @length;
+                    margin-top: @length*2;
+
+                    a {
+                        text-decoration: none;
+                        color: @color7;
+
+                        &:hover {
+                            color: @color6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #css {
+        width: 100%;
+        background-color: @color8;
+        height: @minheight1/2;
+        text-align: center;
+
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: @minheight2;
+            height: @minheight1/2;
+            width: @minheight1*1.4;
+
+            .circle {
+                width: @minheight1/2;
+                position: relative;
+                height: @minheight1/2;
+                float: left;
+                text-align: center;
+
+                .default {
+                    @length: 10em;
+                    @time: 2s;
+                    @mar: 0.8em;
+                    width: @length;
+                    height: @length;
+                    margin-left: @mar;
+                    margin-bottom: @mar;
+                    transition: width @time, height @time;
+                    -moz-transition: width @time, height @time, -moz-transform @time;
+                    -webkit-transition: width @time, height @time, -webkit-transform @time;
+                    -o-transition: width @time, height @time, -o-transform @time;
+                    float: left;
+
+                    &:hover {
+                        @length: 10.5em;
+                        width: @length;
+                        height: @length;
+                        transform: rotate(180deg);
+                        -moz-transform: rotate(180deg);
+                        -webkit-transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                    }
+                }
+
+                .one {
+                    @length: 10em;
+                    @mar: 0.8em;
+                    @crl: all;
+                    @time: 1s;
+                    @style: ease;
+                    margin-left: @mar;
+                    margin-bottom: @mar;
+                    width: @length;
+                    height: @length;
+                    float: left;
+                    -webkit-transition: @crl @time @style;
+                    -moz-transition: @crl @time @style;
+                    -o-transition: @crl @time @style;
+                    transition: @crl @time @style;
+                    background-color: @color1;
+
+                    &:hover {
+                        @length: 9.5em;
+                        width: @length;
+                        height: @length;
+                        float: left;
+                        background-color: @color8;
+                        background-image: @img2;
+                        background-size: cover;
+                        cursor: pointer;
+                        transform: rotate(360deg);
+                        -moz-transform: rotate(360deg);
+                        -webkit-transform: rotate(360deg);
+                        -o-transform: rotate(360deg);
+                        -ms-transform: rotate(360deg);
+                        -moz-border-radius: 5em;
+                        -webkit-border-radius: 5em;
+                        border-radius: 5em;
+                    }
+                }
+
+                .two {
+                    .default;
+                    background-color: @color2;
+                }
+
+                .three {
+                    .default;
+                    background-color: @color3;
+                }
+
+                .four {
+                    .default;
+                    background-color: @color4;
+                }
+            }
+
+            .titlediv {
+                font-size: 8em;
+                color: @color10;
+                font-weight: @weight;
+                position: relative;
+                float: left;
+                margin-top: 0.5em;
+            }
+        }
+    }
+
+    #type {
+        width: 100%;
+        background-color: @color7;
+        height: @minheight1*0.70;
+        position: static;
+        text-align: center;
+
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2em;
+            @width: 35%;
+
+            .arti {
+                @count: 2;
+                @gap: 2em;
+                width: @width;
+                left: 45%-@width;
+                font-size: 1.2em;
+                position: relative;
+                float: left;
+
+                .content1 {
+                    font-weight: 500;
+                }
+
+                .content2 {
+                    margin-top: 2em;
+                    font-weight: @weight;
+                    -moz-column-count: @count;
+                    -webkit-column-count: @count;
+                    column-count: @count;
+                    -moz-column-gap: @gap;
+                    -webkit-column-gap: @gap;
+                    column-gap: @gap;
+                }
+            }
+
+            video {
+                margin-left: 3em;
+                width: @width;
+                height: auto;
+                display: none;
+            }
+        }
+    }
+
+    #contact {
+        width: 100%;
+        background-color: black;
+        height: @minheight1;
+        text-align: center;
+
+        .titlediv {
+            font-size: 3em;
+            color: @color8;
+            font-weight: @weight;
+        }
+
+        @martop: 4em;
+
+        .group1 {
+            width: 25%;
+            font-weight: @weight;
+            float: left;
+
+            .lineone {
+                height: @minheight2/2;
+                margin-top: @martop;
+
+                .div1 {
+                    margin-left: 20%;
+                    width: 80%;
+                    color: @color8;
+                    float: left;
+                    height: @minheight2/4;
+                    font-size: 2em;
+                }
+            }
+
+            .linetwo {
+                .lineone;
+            }
+
+            .linethree {
+                .lineone;
+
+                .div1 {
+                    margin-top: 3em;
+                }
+            }
+
+            .button {
+                margin-top: @martop;
+                margin-left: 30%;
+                width: 60%;
+                height: @minheight2/3;
+                color: @color8;
+                float: left;
+                font-size: 2em;
+                border: 0.05em solid @color8;
+                cursor: pointer;
+            }
+        }
+
+        .group2 {
+            width: 25%;
+            font-weight: @weight;
+            float: left;
+
+            .lineone {
+                height: @minheight2/2;
+                margin-top: @martop;
+
+                .div2 {
+                    width: 100%;
+                    margin-left: 5%;
+                    color: @color8;
+                    float: left;
+                    background-color: @color10;
+                    height: @minheight2/2;
+                    font-family: 'Microsoft YaHei UI';
+                    font-size: 1em;
+                }
+            }
+
+            .linetwo {
+                .lineone;
+
+                .div2 {
+                    height: 7em;
+                    font-size: 1.5em;
+                }
+            }
+
+            .linethree {
+                .lineone;
+
+                .div2 {
+                    height: 8em;
+                    margin-top: 2em;
+                }
+            }
+        }
+
+        .area {
+            width: 38%;
+            float: left;
+            margin-left: 5%;
+            margin-top: @martop;
+            height: 40em;
+        }
+    }
+}
